@@ -1,14 +1,17 @@
-import '@styles/globals.css'
-import Nav from '@components/Nav'
-import Provider from '@components/Provider'
+import "@styles/globals.css";
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 export const metadata = {
-    title: 'PromptHub',
-    description: 'Discover & Share AI Prompts'
-}
+  title: "PromptHub",
+  description: "Discover & Share AI Prompts",
+};
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href='/assets/images/logo.svg' />
+      </head>
       <body>
         <Provider>
           <div className="main">
@@ -22,6 +25,6 @@ const RootLayout = ({children}) => {
       </body>
     </html>
   );
-}
+};
 
-export default RootLayout
+export default RootLayout;
